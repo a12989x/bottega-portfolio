@@ -1,0 +1,36 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 75vh;
+    gap: 2rem;
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+    }
+
+    .content {
+        // padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__header {
+            color: $primary-color;
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+
+        &__skills {
+            color: $secondary-color;
+            margin-bottom: 1rem;
+        }
+
+        &__description {
+            color: $text-color;
+        }
+    }
+}

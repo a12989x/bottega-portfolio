@@ -1,0 +1,103 @@
+.form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    color: $secondary-color;
+    padding-bottom: 1rem;
+    padding: 1rem 2rem;
+    background-color: $background-color;
+    border-radius: 50px;
+    box-shadow: $box-shadow;
+
+    .title {
+        text-align: center;
+        grid-column: 1 / -1;
+        color: $primary-color;
+    }
+
+    label {
+        input,
+        select,
+        textarea {
+            margin-top: 0.5rem;
+        }
+
+        &.description {
+            grid-column: 1 / -1;
+        }
+
+        textarea {
+            min-height: 8vh;
+            height: 10vh;
+            max-height: 11vh;
+            resize: vertical;
+        }
+    }
+
+    .dropzone-container {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .dropzone {
+            background-color: $background-color;
+            border-color: $secondary-color;
+
+            .dz-preview {
+                border-radius: 20px;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: space-between;
+                // align-items: center;
+
+                img {
+                    width: 100%;
+                    height: 120px;
+                }
+            }
+
+            .dz-remove,
+            .remove {
+                color: $error-color;
+                // color: $light-shadow;
+                background-color: $background-color;
+                border-radius: 0;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                width: 100%;
+                cursor: pointer;
+                margin-bottom: 0;
+            }
+
+            .remove {
+                border: none;
+                height: 100%;
+                // padding: 0.3rem 0;
+                font-size: 14px;
+                font-family: 'Poppins', Arial, 'Helvetica Neue', Helvetica,
+                    sans-serif;
+            }
+
+            .filepicker-file-icon {
+                &::before {
+                    background-color: $background-color;
+                    border-color: $secondary-color;
+                }
+
+                &::after {
+                    background-color: $secondary-color;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+
+    button {
+        // display: inline-block;
+        grid-column: 1 / -1;
+        width: 30vw;
+        padding: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}

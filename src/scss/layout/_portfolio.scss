@@ -1,0 +1,96 @@
+.portfolio {
+    width: 100%;
+    display: grid;
+    // gap: 6rem;
+    column-gap: 6rem;
+    row-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    &__text {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: $secondary-color;
+            padding: 0.8rem 0;
+            margin: 1rem 0 1.5rem 0;
+            width: 50vw;
+            background-color: $background-color;
+            border-radius: 50px;
+            box-shadow: $box-shadow;
+        }
+    }
+
+    &__categories {
+        // padding: 1rem;
+        grid-column: 1 / -1;
+        display: grid;
+        column-gap: 6rem;
+        row-gap: 4rem;
+        grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+
+        button {
+            padding: 1rem;
+        }
+    }
+
+    &__card {
+        background-color: $background-color;
+        border-radius: 50px;
+        box-shadow: $box-shadow;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .card {
+            &__img {
+                height: 30vh;
+                object-fit: cover;
+                border-radius: 50px;
+                background-color: $secondary-color;
+                text-align: center;
+                color: $background-color;
+            }
+
+            &__text {
+                padding: 1rem 1rem 1.5rem 1rem;
+            }
+
+            &__title {
+                font-size: 1.5rem;
+                color: $primary-color;
+                font-weight: bold;
+                // margin-bottom: 0.3rem;
+            }
+
+            &__category {
+                font-size: 1rem;
+                color: $secondary-color;
+                font-weight: 300;
+                font-style: italic;
+                margin-bottom: 0.8rem;
+                text-transform: capitalize;
+            }
+
+            &__description {
+                color: $text-color;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        button {
+            // position: relative;
+            // bottom: 0;
+            // right: 0;
+            width: 15vw;
+            // margin: 0 0 1rem 1rem;
+            margin: 0 auto 1.5rem auto;
+        }
+    }
+}

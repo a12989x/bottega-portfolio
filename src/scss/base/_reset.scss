@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Poppins', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    padding: 50px;
+    background-color: $background-color;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+select,
+input[type='number'] {
+    -webkit-appearance: none;
+}

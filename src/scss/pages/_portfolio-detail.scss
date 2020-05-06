@@ -1,0 +1,72 @@
+.portfolio__detail {
+    margin-top: 2.5rem;
+    border-radius: 50px;
+    background-color: $background-color;
+    box-shadow: $box-shadow;
+    position: relative;
+
+    &-name,
+    &-description {
+        padding: 0 1.5rem;
+    }
+
+    &-img {
+        height: 45vh;
+        max-height: 45vh;
+        object-fit: cover;
+        border-radius: 50px;
+        background-color: $secondary-color;
+    }
+
+    &-name {
+        color: $primary-color;
+    }
+
+    &-description {
+        color: $text-color;
+        margin-bottom: 1rem;
+        line-height: 1.8rem;
+    }
+
+    &-back,
+    &-category {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        border-radius: 50px;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s;
+        box-shadow: $box-shadow;
+    }
+
+    &-back {
+        background-color: $primary-color;
+        top: 1rem;
+        left: 2%;
+        color: $light-shadow;
+    }
+
+    &-category {
+        background-color: $light-shadow;
+        top: 1rem;
+        right: 2%;
+        color: $text-color;
+    }
+
+    &-link {
+        margin-bottom: 2.5rem;
+        margin-left: 1rem;
+        width: 20vw;
+        // padding: 1rem 2rem
+    }
+
+    &:hover {
+        .portfolio__detail {
+            &-back,
+            &-category {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+    }
+}

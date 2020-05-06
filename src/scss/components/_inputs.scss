@@ -1,0 +1,22 @@
+input,
+textarea,
+select {
+    background-color: $background-color;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    box-shadow: $box-shadow-inset;
+    color: $primary-color;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+textarea {
+    font-family: 'Poppins', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+// select {
+//     background-color: $background-color;
+//     color: $primary-color;
+//     border
+// }

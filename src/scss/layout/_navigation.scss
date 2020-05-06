@@ -1,0 +1,36 @@
+.navigation {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $background-color;
+    border-radius: 50px;
+    box-shadow: $box-shadow;
+    border: 1px solid rgba($color: $light-shadow, $alpha: 0.3);
+
+    h2 {
+        .name {
+            color: $secondary-color;
+            font-size: 2rem;
+            transition: color 0.3s;
+        }
+    }
+
+    & > ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > li {
+            & > a {
+                color: $secondary-color;
+                font-weight: bold;
+                font-size: 1rem;
+                transition: color 0.3s;
+            }
+        }
+    }
+
+    a.active {
+        color: $primary-color;
+    }
+}

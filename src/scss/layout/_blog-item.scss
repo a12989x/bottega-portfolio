@@ -1,0 +1,47 @@
+.blog__item {
+    padding: 2.5rem;
+    border-radius: 50px;
+    background-color: $background-color;
+    box-shadow: $box-shadow;
+    position: relative;
+    // height: 25vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+    &-title {
+        color: $primary-color;
+        margin-bottom: 1rem;
+    }
+
+    &-link {
+        margin-top: 1rem;
+        bottom: 13%;
+        left: 7%;
+
+        a {
+            font-size: 1rem;
+        }
+    }
+
+    &-delete {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        padding: 1rem;
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        .blog__item {
+            &-delete {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.portfolio__manager {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 3fr 1fr;
+    // padding: 1rem 2rem;
+    margin-top: 2.5rem;
+    // background-color: $background-color;
+    // border-radius: 50px;
+    // box-shadow: $box-shadow;
+    max-height: 95vh;
+}
