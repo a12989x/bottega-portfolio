@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import React, { useState, useEffect } from 'react';
 import { EditorState, convertToRaw, ContentState } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 import draftToHtml from 'draftjs-to-html';
@@ -84,28 +83,3 @@ class RichTextEditor extends Component {
 }
 
 export default RichTextEditor;
-
-// const RichEditorText = (props) => {
-//     const [editorState, setEditorState] = useState(EditorState.createEmpty());
-
-//     const onEditorStateChange = (editorState) => {
-//         setEditorState({ editorState });
-//     };
-
-//     useEffect(() => {
-//         props.handleRichTextEditorChange(
-//             draftToHtml(convertToRaw(editorState.getCurrentContent()))
-//         );
-//     }, [editorState]);
-
-//     return (
-//         <Editor
-//             editorState={editorState}
-// wrapperClassName="demo-wrapper"
-// editorClassname="demo-editor"
-//             onEditorStateChange={onEditorStateChange}
-//         />
-//     );
-// };
-
-// export default RichEditorText;

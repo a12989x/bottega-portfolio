@@ -1,6 +1,5 @@
 .portfolio__manager-items {
     max-height: 90vh;
-    // max-height: 100%;
     overflow: auto;
     background-color: $background-color;
     border-radius: 50px;
@@ -20,15 +19,10 @@
         background-color: $secondary-color;
         margin: 0 0 1rem 0;
 
-        // &:not(first-child) {
-        //     margin: 1rem 0;
-        // }
-
         &-name {
             padding: 0.3rem 0.5rem;
             color: $light-shadow;
             background-color: $primary-color;
-            // mix-blend-mode: screen;
         }
 
         &-category {

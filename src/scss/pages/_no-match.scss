@@ -1,0 +1,17 @@
+.no-match {
+    text-align: center;
+    p {
+        font-size: 20vh;
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    h1 {
+        font-weight: normal;
+    }
+
+    h3 {
+        font-weight: normal;
+        margin-bottom: 1rem;
+    }
+}

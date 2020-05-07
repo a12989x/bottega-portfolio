@@ -1,7 +1,6 @@
 .portfolio {
     width: 100%;
     display: grid;
-    // gap: 6rem;
     column-gap: 6rem;
     row-gap: 4rem;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -26,7 +25,6 @@
     }
 
     &__categories {
-        // padding: 1rem;
         grid-column: 1 / -1;
         display: grid;
         column-gap: 6rem;
@@ -65,7 +63,6 @@
                 font-size: 1.5rem;
                 color: $primary-color;
                 font-weight: bold;
-                // margin-bottom: 0.3rem;
             }
 
             &__category {
@@ -85,11 +82,7 @@
         }
 
         button {
-            // position: relative;
-            // bottom: 0;
-            // right: 0;
             width: 15vw;
-            // margin: 0 0 1rem 1rem;
             margin: 0 auto 1.5rem auto;
         }
     }

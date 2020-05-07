@@ -45,10 +45,6 @@
 
             .dz-preview {
                 border-radius: 20px;
-                // display: flex;
-                // flex-direction: column;
-                // justify-content: space-between;
-                // align-items: center;
 
                 img {
                     width: 100%;
@@ -59,7 +55,6 @@
             .dz-remove,
             .remove {
                 color: $error-color;
-                // color: $light-shadow;
                 background-color: $background-color;
                 border-radius: 0;
                 border-bottom-left-radius: 20px;
@@ -72,7 +67,6 @@
             .remove {
                 border: none;
                 height: 100%;
-                // padding: 0.3rem 0;
                 font-size: 14px;
                 font-family: 'Poppins', Arial, 'Helvetica Neue', Helvetica,
                     sans-serif;
@@ -93,7 +87,6 @@
     }
 
     button {
-        // display: inline-block;
         grid-column: 1 / -1;
         width: 30vw;
         padding: 1rem;

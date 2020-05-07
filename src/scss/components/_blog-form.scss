@@ -116,10 +116,6 @@ form {
         }
     }
 
-    // .filepicker.dropzone.dz-clickable {
-    //     grid-column: 1 / -1;
-    // }
-
     .dropzone {
         grid-column: 1 / -1;
         background-color: $background-color;
@@ -127,10 +123,6 @@ form {
 
         .dz-preview {
             border-radius: 20px;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: space-between;
-            // align-items: center;
 
             img {
                 width: 100%;
@@ -141,7 +133,6 @@ form {
         .dz-remove,
         .remove {
             color: $error-color;
-            // color: $light-shadow;
             background-color: $background-color;
             border-radius: 0;
             border-bottom-left-radius: 20px;
@@ -154,7 +145,6 @@ form {
         .remove {
             border: none;
             height: 100%;
-            // padding: 0.3rem 0;
             font-size: 14px;
             font-family: 'Poppins', Arial, 'Helvetica Neue', Helvetica,
                 sans-serif;

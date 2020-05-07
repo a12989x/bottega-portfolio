@@ -47,10 +47,6 @@ const PortfolioManager = (props) => {
     };
 
     const handleNewFormSubmission = (portfolioItem) => {
-        // this.setState({
-        //     portfolioItems: [portfolioItem].concat(this.state.portfolioItems),
-        // });
-
         setData([portfolioItem].concat(data));
     };
 
@@ -67,10 +63,6 @@ const PortfolioManager = (props) => {
     };
 
     const clearPortfolioToEdit = () => {
-        // this.setState({
-        //     portfolioToEdit: {},
-        // });
-
         setPortfolioToEdit({});
     };
 
@@ -105,5 +97,4 @@ const PortfolioManager = (props) => {
     );
 };
 
-// export default withRouter(PortfolioManager);
 export default PortfolioManager;

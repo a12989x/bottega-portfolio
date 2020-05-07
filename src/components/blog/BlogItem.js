@@ -10,7 +10,6 @@ const BlogItem = (props) => {
     return (
         <div className="blog__item">
             <h3 className="blog__item-title">{title}</h3>
-            {/* <p>{content}</p> */}
             <Truncate lines={5} ellipsis={<span> . . .</span>}>
                 {striptags(content)}
             </Truncate>
