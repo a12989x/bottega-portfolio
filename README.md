@@ -2,7 +2,7 @@ This is a project to Bottega.
 
 # My Portfolio
 
-This is my portfolio for Bottega.
+This is my portfolio for Bottega
 
 **Live Preview: [Portfolio]()**
 
