@@ -4,7 +4,8 @@ This is a project to Bottega.
 
 This is my portfolio for Bottega
 
-**Live Preview: [Portfolio]()**
+**Live Preview: [Portfolio](https://ax-bottega-react-portfolio.herokuapp.com/ (A12989x Portfolio))** (Heroku)
+**Live Preview: [Portfolio](https://bottega-portfolio.now.sh/ (A12989x Portfolio))** (Vercel)
 
 ![fries-page](src/img/portfolio-thumb.png)
 
